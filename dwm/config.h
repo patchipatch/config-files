@@ -84,7 +84,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY, 			XK_plus,   spawn, 	   SHCMD("pamixer -i 5") },
-	{ MODKEY,			XK_minus   spawn,	   SHCMD("pamixer -d 5") },
+	{ MODKEY,			XK_minus,   spawn,	   SHCMD("pamixer -d 5") },
 	{ MODKEY|ShiftMask,		XK_f,	   spawn,	   SHCMD("firefox") },
 	{ MODKEY|ShiftMask,		XK_n,	   spawn,	   SHCMD("st -e nnn") },
 	{ MODKEY|ShiftMask,		XK_j,	   spawn,	   SHCMD("j4-dmenu-desktop --dmenu='dmenu -b'") },
