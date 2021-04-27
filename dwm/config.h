@@ -83,11 +83,14 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY, 			XK_plus,   spawn, 	   SHCMD("pamixer -i 5") },
+	{ MODKEY, 			XK_equal,   spawn, 	   SHCMD("pamixer -i 5") },
 	{ MODKEY,			XK_minus,   spawn,	   SHCMD("pamixer -d 5") },
 	{ MODKEY|ShiftMask,		XK_f,	   spawn,	   SHCMD("firefox") },
 	{ MODKEY|ShiftMask,		XK_n,	   spawn,	   SHCMD("st -e nnn") },
 	{ MODKEY|ShiftMask,		XK_j,	   spawn,	   SHCMD("j4-dmenu-desktop --dmenu='dmenu -b'") },
+	{ MODKEY|ShiftMask,		XK_z,	   spawn,	   SHCMD("import -window root ~/Pictures/$(date +'%m-%d-%y_%H:%M:%S').png") },
+	{ MODKEY|ShiftMask,		XK_x,	   spawn,	   SHCMD("import ~/Pictures/$(date +'%m-%d-%y_%H:%M:%S').png") },
+	{ MODKEY|ShiftMask,             XK_Home,      spawn,       SHCMD("slock") },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
